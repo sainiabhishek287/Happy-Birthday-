@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111321">
+<title>For Cutiee</title>
+<style>
+:root{--bg:#111321;--panel:#1b2032;--pink:#f0b7c9;--gold:#e8d6a8;--cream:#f8f3ef;--muted:#c4c3d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#30314c 0%,#171a2a 48%,#10121e 100%);color:var(--cream);font-family:Arial, sans-serif;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(1px 1px at 10% 20%,#fff 98%,transparent),radial-gradient(1px 1px at 80% 30%,#f7dba0 98%,transparent),radial-gradient(1px 1px at 30% 75%,#fff 98%,transparent),radial-gradient(2px 2px at 65% 82%,#fff 98%,transparent);background-size:220px 220px;z-index:-1}
+.wrap{width:min(850px,92%);margin:auto}.hero{min-height:88vh;display:grid;place-items:center;text-align:center;padding:65px 18px 45px}.eyebrow{letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-size:10px}.moon{font-size:42px;color:var(--gold);margin:25px 0 12px}h1{font-size:clamp(46px,10vw,82px);font-weight:500;line-height:1.05;margin:12px 0;color:#fff}h1 span{color:var(--pink);font-weight:400}.sub{font-size:15px;line-height:1.8;color:var(--muted);max-width:530px;margin:18px auto 28px}.date{color:var(--gold);letter-spacing:.18em;font-size:11px}.btn{border:0;background:var(--pink);color:#241b29;padding:14px 22px;border-radius:9px;font-weight:700;font-size:13px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.section{padding:55px 0;text-align:center}.section h2{font-size:clamp(28px,6vw,42px);font-weight:500;margin:12px 0}.section p.lead{font-size:14px;line-height:1.8;color:var(--muted);max-width:600px;margin:0 auto 25px}.divider{width:65px;height:1px;background:var(--gold);opacity:.7;margin:22px auto}.letter{max-width:660px;margin:25px auto;padding:clamp(23px,6vw,42px);background:#ffffff0b;border:1px solid #ffffff20;border-radius:16px;text-align:left;font-size:16px;line-height:1.9;color:#f3edf0}.letter p{margin:0 0 17px}.signature{color:var(--pink);font-size:17px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;max-width:740px;margin:28px auto}.reason{border:1px solid #ffffff20;background:#ffffff09;border-radius:12px;padding:16px;text-align:left;min-height:78px;opacity:0;transform:translateY(8px);transition:.4s}.reason.show{opacity:1;transform:none}.num{display:block;color:var(--gold);font-size:10px;letter-spacing:.15em;margin-bottom:7px}.reason strong{font-size:14px;font-weight:400;line-height:1.5}.revealbox{max-width:600px;margin:24px auto;padding:28px 20px;border:1px solid #ffffff20;border-radius:16px;background:#ffffff09}.hidden{display:none}.surprise{font-size:17px;line-height:1.85;color:#f3edf0}.small{font-size:12px;line-height:1.7;color:var(--muted)}.footer{text-align:center;padding:35px 15px 55px;color:#aaaabd;font-size:10px;letter-spacing:.12em}.heart{color:var(--pink);font-size:22px}.spark{position:fixed;pointer-events:none;font-size:16px;animation:rise 1.4s ease-out forwards;z-index:5}@keyframes rise{to{transform:translateY(-120px) scale(.2);opacity:0}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{min-height:82vh}.letter{font-size:15px}}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+ <div>
+  <div class="eyebrow">A little birthday page for</div>
+  <div class="moon">☾</div>
+  <div class="date">26 NOVEMBER</div>
+  <h1>Hey, <span>cutiee.</span></h1>
+  <p class="sub">I wanted to make you something instead of sending just another birthday text. It's simple, but I made it with you in mind. Hope it makes you smile.</p>
+  <button class="btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">Okay, open it</button>
+ </div>
+</header>
+<main class="wrap">
+<section class="section" id="letter">
+ <div class="eyebrow">A little note</div><h2>Happy birthday, cutiee.</h2><div class="divider"></div>
+ <div class="letter">
+  <p>Happy birthday, cutiee. ♡</p>
+  <p>I know we've only been talking for a little while, but I'm genuinely glad we started. Somehow, our conversations have become one of the parts of my day that I look forward to.</p>
+  <p>I like getting to know you — your little habits, your sense of humour, the random things you tell me, and all the parts of you I haven't discovered yet. You make me smile more than you probably realise.</p>
+  <p>I don't want this message to make things complicated or put any pressure on you. I just wanted you to know that you mean a lot to me, and that I'm making an effort because I think you're worth it.</p>
+  <p>I hope this year brings you good people, happy moments, new experiences and plenty of reasons to laugh. Enjoy your day properly, okay?</p>
+  <p class="signature">Happy birthday again, cutiee. ♡</p>
+ </div>
+</section>
+<section class="section">
+ <div class="eyebrow">Things I appreciate</div><h2>A few little things</h2>
+ <p class="lead">Not a list of big promises. Just some honest things I like about having you in my life.</p>
+ <div class="grid" id="reasons">
+  <div class="reason"><span class="num">01</span><strong>Your messages can turn a regular day around.</strong></div>
+  <div class="reason"><span class="num">02</span><strong>I like how easy it is to lose track of time talking to you.</strong></div>
+  <div class="reason"><span class="num">03</span><strong>Your smile is honestly hard not to like.</strong></div>
+  <div class="reason"><span class="num">04</span><strong>I enjoy hearing about the little things in your day.</strong></div>
+  <div class="reason"><span class="num">05</span><strong>You make me curious to know more about you.</strong></div>
+  <div class="reason"><span class="num">06</span><strong>I like your playful side.</strong></div>
+  <div class="reason"><span class="num">07</span><strong>You give me something to look forward to.</strong></div>
+  <div class="reason"><span class="num">08</span><strong>I appreciate the time you make for me.</strong></div>
+  <div class="reason"><span class="num">09</span><strong>Even our random conversations feel special to me.</strong></div>
+  <div class="reason"><span class="num">10</span><strong>I like that I'm still discovering new things about you.</strong></div>
+  <div class="reason"><span class="num">11</span><strong>You deserve to feel celebrated today.</strong></div>
+  <div class="reason"><span class="num">12</span><strong>I hope you never run out of reasons to laugh.</strong></div>
+  <div class="reason"><span class="num">13</span><strong>I like being someone you can talk to.</strong></div>
+  <div class="reason"><span class="num">14</span><strong>Your little updates mean more than you think.</strong></div>
+  <div class="reason"><span class="num">15</span><strong>I want to hear about the things you're excited for.</strong></div>
+  <div class="reason"><span class="num">16</span><strong>I hope today feels as lovely as you deserve.</strong></div>
+  <div class="reason"><span class="num">17</span><strong>You don't have to be anything other than yourself with me.</strong></div>
+  <div class="reason"><span class="num">18</span><strong>I remember the small things you tell me.</strong></div>
+  <div class="reason"><span class="num">19</span><strong>I'm glad we crossed paths.</strong></div>
+  <div class="reason"><span class="num">20</span><strong>I hope this year is kind to you.</strong></div>
+  <div class="reason"><span class="num">21</span><strong>I like making you smile, even in little ways.</strong></div>
+  <div class="reason"><span class="num">22</span><strong>Your happiness matters to me.</strong></div>
+  <div class="reason"><span class="num">23</span><strong>There's still so much I'd love to learn about you.</strong></div>
+  <div class="reason"><span class="num">24</span><strong>I appreciate the person you are.</strong></div>
+  <div class="reason"><span class="num">25</span><strong>I'm happy we get to share these little moments.</strong></div>
+  <div class="reason"><span class="num">26</span><strong>And, simply, I really like you, cutiee.</strong></div>
+ </div>
+ <button class="btn" id="showReasons">Show me the little things</button>
+</section>
+<section class="section">
+ <div class="eyebrow">One last surprise</div><h2>Make a birthday wish</h2><p class="lead">Take a second, make a wish, then tap below.</p>
+ <div class="revealbox">
+  <div style="font-size:43px;margin-bottom:14px">🕯️</div>
+  <button class="btn" id="wishBtn">Done, I made one</button>
+  <div class="hidden" id="wishText"><p class="surprise">I hope your wish comes true. I hope you get more happy days, good surprises, new memories and all the things you've been quietly hoping for. And I hope I get to be around for more of your smiles. Happy birthday, cutiee. ♡</p><div class="heart">♥</div></div>
+ </div>
+</section>
+<section class="section" style="padding-top:5px">
+ <div class="eyebrow">That's all for now</div><h2>Have the best day.</h2>
+ <p class="lead">Thank you for being you, cutiee. I'm really glad I got to know you.</p>
+ <div class="divider"></div><p class="signature">— someone who wanted to make you smile ♡</p>
+</section>
+</main>
+<footer class="footer">MADE JUST FOR YOU · HAPPY BIRTHDAY, CUTIEE ♡</footer>
+<script>
+const cards=[...document.querySelectorAll('.reason')];
+document.getElementById('showReasons').addEventListener('click',()=>{cards.forEach((c,i)=>setTimeout(()=>c.classList.add('show'),i*55));document.getElementById('showReasons').textContent='There you go, cutiee ♡';document.getElementById('showReasons').disabled=true;});
+document.getElementById('wishBtn').addEventListener('click',()=>{document.getElementById('wishText').classList.remove('hidden');document.getElementById('wishBtn').textContent='Wish made ✨';for(let i=0;i<18;i++){let s=document.createElement('span');s.className='spark';s.textContent=['✦','♡','✧'][i%3];s.style.left=(10+Math.random()*80)+'vw';s.style.top=(45+Math.random()*35)+'vh';document.body.appendChild(s);setTimeout(()=>s.remove(),1500);}});
+</script>
+</body></html>
